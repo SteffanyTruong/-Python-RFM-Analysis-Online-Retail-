@@ -38,4 +38,48 @@ Once each of the attributes has appropriate categories defined, segments are cre
 `dt_datetime = pd.to_datetime(Sales['InvoiceDate'])`
 
 ## 2. RFM Analysis
-### 2.1 Recency Score 
+### 2.1 Recency
+`print("Sales: Min Date", Sales["InvoiceDate"].min(), "Max Date", Sales["InvoiceDate"].max())`  
+*# Calculate recency*  
+`recency = (dt(2011, 12, 9) - Sales.groupby("CustomerID").agg({"InvoiceDate":"max"})).rename(columns = {"InvoiceDate":"Recency"})`
+
+*# Convert recency to days*  
+`recency["Recency"] = recency["Recency"].apply(lambda x: x.days)`  
+
+`recency.head()`
+
+### 2.2 Frecency
+*# Calculate frequency*
+`freq = Sales.groupby("CustomerID").agg({"InvoiceDate":"nunique"}).rename(columns={"InvoiceDate": "Frequency"})`
+
+`freg`
+
+### 2.3 Monetary
+*# Calculate monetary*  
+`Sales["TotalPrice"] = Sales["Quantity"] * Sales["UnitPrice"]`  
+`monetary = Sales.groupby("CustomerID").agg({"TotalPrice":"sum"}).rename(columns={"TotalPrice":"Monetary"})`  
+
+`monetary.head()`
+
+*# Create rfm table by concat three tables*  
+`rfm = pd.concat([recency, freq, monetary],  axis=1).reset_index()`
+
+`rfm.head()`
+
+### 2.4 Assigning RFM score
+*# Determining rfm quartile ( use 5 bins )*  
+`rfm["RecencyScore"] = pd.qcut(rfm["Recency"], 5, labels = [5, 4 , 3, 2, 1])`  
+`rfm["FrequencyScore"]= pd.qcut(rfm["Frequency"].rank(method="first"),5, labels=[1,2,3,4,5])`  
+`rfm["MonetaryScore"] = pd.qcut(rfm['Monetary'], 5, labels = [1, 2, 3, 4, 5])`
+
+`rfm.head()`
+
+*# RFM Scores: Category*  
+`rfm["RFM Score"] = (rfm['RecencyScore'].astype(str) +
+                     rfm['FrequencyScore'].astype(str) +
+                     rfm['MonetaryScore'].astype(str))`
+                     
+*# Convert each value in the 'RFM Score' column to an integer*  
+`rfm['RFM Score'] = rfm['RFM Score'].astype(int)`  
+
+`rfm.info()`
