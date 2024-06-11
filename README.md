@@ -19,13 +19,13 @@ Once each of the attributes has appropriate categories defined, segments are cre
 `import warnings`  
 `warnings.filterwarnings ('ignore')`
 ## 1. Data wrangling
-`#Load the dataset and parse to DataFrame`    
+*# Load the dataset and parse to DataFrame*    
 `df=pd.ExcelFile("/content/drive/MyDrive/ecommerce retail.xlsx")`  
 `Sales= df.parse('ecommerce retail')`  
 `Segment= df.parse('Segmentation')`  
 `Sales.info()`  
 `Segment.info()`
 
-`#Remove missing value`  
+*#Remove missing value*  
 `Sales.dropna(inplace = True)`  
 `print("Shape of the `ecommerce data`: {}".format(Sales.shape))`  
