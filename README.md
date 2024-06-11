@@ -29,3 +29,13 @@ Once each of the attributes has appropriate categories defined, segments are cre
 *#Remove missing value*  
 `Sales.dropna(inplace = True)`  
 `print("Shape of the `ecommerce data`: {}".format(Sales.shape))`  
+
+*# Remove negative values ( return order )*  
+`Sales["InvoiceNo"] = Sales["InvoiceNo"].astype("str")`  
+`Sales = Sales[~Sales["InvoiceNo"].str.contains("C", na = False)]`  
+
+*# Convert to datetime.datetime*
+`dt_datetime = pd.to_datetime(Sales['InvoiceDate'])`
+
+## 2. RFM Analysis
+### 2.1 Recency Score 
