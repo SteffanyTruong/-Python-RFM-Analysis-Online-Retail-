@@ -83,3 +83,19 @@ Once each of the attributes has appropriate categories defined, segments are cre
 `rfm['RFM Score'] = rfm['RFM Score'].astype(int)`  
 
 `rfm.info()`
+
+*# Convert comma-separated string to a list of rfm scores*  
+`Segment['RFM Score'] = Segment['RFM Score'].str.split(',')`
+
+*# Tranform each element of the list to a row*
+`Segment = Segment.explode('RFM Score').reset_index(drop=True)`
+
+*# Convert each value in the 'RFM Score' column to an integer*
+`Segment['RFM Score'] = Segment['RFM Score'].astype(int)  # Assuming 'RFM Score' contains integer-like strings`
+
+### 2.5 Assigning customer segment
+*# Merge rfm table with segment table*  
+`rfm_segment = pd.merge(rfm,Segment, on='RFM Score',how='left')`  
+`print(rfm_segment.head())`  
+`rfm_segment.info()`
+## 3. Summary Statistic
