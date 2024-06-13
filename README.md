@@ -17,7 +17,8 @@ Once each of the attributes has appropriate categories defined, segments are cre
 `import matplotlib.pyplot as plt`  
 `import seaborn as sns`  
 `import warnings`  
-`warnings.filterwarnings ('ignore')`
+`warnings.filterwarnings ('ignore')`  
+`import plotly.express as px` 
 ## 1. Data wrangling
 *# Load the dataset and parse to DataFrame*    
 `df=pd.ExcelFile("/content/drive/MyDrive/ecommerce retail.xlsx")`  
@@ -99,3 +100,35 @@ Once each of the attributes has appropriate categories defined, segments are cre
 `print(rfm_segment.head())`  
 `rfm_segment.info()`
 ## 3. Summary Statistic
+**How many customer in each segment?**  
+`Stats = rfm_segment[["Segment", "CustomerID"]].groupby("Segment").nunique().rename(columns={"CustomerID": "Cust_Count"}).reset_index()`  
+`Stats["Count_Share"] = Stats["Cust_Count"] / Stats["Cust_Count"].sum() * 100.00`  
+`Stats = Stats.round({"Count_Share": 2})`  
+`Stats`
+
+**Calculate average recency ( days ) by segment customer** 
+`rfmStats = rfm_segment.groupby("Segment")['Recency'].mean().reset_index()`   
+`rfmStats = rfmStats.rename(columns = {'Recency':'Recency_mean'})` *# Rename the column after converting to DataFrame*  
+`rfmStats = rfmStats.round({'Recency_mean':0})`  
+`rfmStats`  
+# III. Visualize
+## Distribution of recency, frecency, monetary
+*# Show distribution of each variable of the model*  
+`colnames=['Recency','Frequency','Monetary']`      
+`for col in colnames:`      
+    `fig, ax = plt.subplots(figsize=(12,3))`    
+    `sns.distplot(rfm_segment[col])`      
+    `ax.set_title('Distribution of %s' %col)`      
+  `plt.show()`  
+## Seaborn barplot of average recency by customer segment
+`sns.barplot(data=rfmStats,
+            y='Segment',
+            x='Recency_mean',
+            palette='husl')`  
+`plt.title('Average Recency (day)')`  
+`plt.show()`
+
+## Build a treemap of customer segmentation
+`treemap_data= rfm_segment.groupby("Segment").agg(Segment_count=("Segment", "count")).reset_index()`  
+`fig = px.treemap(treemap_data, path=['Segment'], values='Segment_count', title='Treemap of customer segmentation')`  
+`fig.show()`
