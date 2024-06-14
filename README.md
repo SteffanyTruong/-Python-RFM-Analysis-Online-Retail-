@@ -29,10 +29,10 @@ Once each of the attributes has appropriate categories defined, segments are cre
 ## Treemap of customer segmentation
 <img width="1234" alt="Screenshot 2024-06-14 at 16 09 18" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/ccaa99d1-918b-4138-9b79-72e37e578e3b">
 
-# IV. Insights
+# III. Insights
 1.The most important index of the 3 indicators that the SuperStore company needs to pay attention to is F, then R: because the rate of customers buying once and twice is very high. Very few customers make long-term purchases like 8-9 times or more. -> That shows that the customer retention rate at the company is still low or we need to dig in the categories analysis to figure out the deep problem.
 
-2. The 2 big groups are champions (19.2% ) and hibernating customer (16% ), following by lost customer ( 11.2% ),loyal ( 9.93% ), at risk (9.7% ) and potential loyal ( 9.52% ). These groups are really need attentions. 
+2.The 2 big groups are champions (19.2% ) and hibernating customer (16% ), following by lost customer ( 11.2% ),loyal ( 9.93% ), at risk (9.7% ) and potential loyal ( 9.52% ). These groups are really need attentions. 
 # IV. Recommendations
 
 |Segment | Charateristics| Recommendation |
