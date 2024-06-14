@@ -26,10 +26,9 @@ Once each of the attributes has appropriate categories defined, segments are cre
 `plt.title('Number of customer by number of order')`  
 `plt.ylabel('Number of customer')`  
 `plt.show()`
-## Build a treemap of customer segmentation
-`treemap_data= rfm_segment.groupby("Segment").agg(Segment_count=("Segment", "count")).reset_index()`  
-`fig = px.treemap(treemap_data, path=['Segment'], values='Segment_count', title='Treemap of customer segmentation')`  
-`fig.show()`
+## Treemap of customer segmentation
+
+
 # IV. Insights
 1.The most important index of the 3 indicators that the SuperStore company needs to pay attention to is F, then R: because the rate of customers buying once and twice is very high. Very few customers make long-term purchases like 8-9 times or more. -> That shows that the customer retention rate at the company is still low or we need to dig in the categories analysis to figure out the deep problem.
 
