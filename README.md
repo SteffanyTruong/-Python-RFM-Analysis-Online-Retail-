@@ -98,7 +98,7 @@
 `rfmStats = rfmStats.rename(columns = {'Recency':'Recency_mean'})` *# Rename the column after converting to DataFrame*  
 `rfmStats = rfmStats.round({'Recency_mean':0})`  
 `rfmStats`  
-# III. Visualize
+# Visualize
 ## Distribution of recency, frecency, monetary
 *# Show distribution of each variable of the model*  
 `colnames=['Recency','Frequency','Monetary']`      
