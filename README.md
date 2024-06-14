@@ -13,7 +13,7 @@ Once each of the attributes has appropriate categories defined, segments are cre
 
 # II. Data Visualize with Python
 ## Distribution of recency, frecency, monetary
-
+<img width="1048" alt="Screenshot 2024-06-14 at 15 22 02" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/8e796070-3dfe-49d3-9f74-8d4496412b55">
 
 ## Average days since last orders by customer segment  
 *# Seaborn barplot of average recency by customer segment*  
