@@ -16,6 +16,7 @@ Once each of the attributes has appropriate categories defined, segments are cre
 <img width="1048" alt="Screenshot 2024-06-14 at 15 22 02" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/8e796070-3dfe-49d3-9f74-8d4496412b55">
 
 ## Average days since last orders by customer segment  
+<img width="752" alt="Screenshot 2024-06-14 at 15 11 01" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/1b644d2c-0860-4521-a6c1-7f4d92cc3ede">
 
 ## Number of customer by number of orders   
 *# Seaborn Countplot of Frequency*  
