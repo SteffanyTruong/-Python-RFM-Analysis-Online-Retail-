@@ -21,6 +21,7 @@ Once each of the attributes has appropriate categories defined, segments are cre
 <img width="752" alt="Screenshot 2024-06-14 at 15 11 01" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/1b644d2c-0860-4521-a6c1-7f4d92cc3ede">
 
 ## Number of customer by number of orders   
+<img width="658" alt="Screenshot 2024-07-29 at 15 21 18" src="https://github.com/user-attachments/assets/db536fb8-48f1-4b12-adb7-ed1643cbe9d1">
 
 ## Treemap of customer segmentation
 <img width="1234" alt="Screenshot 2024-06-14 at 16 09 18" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/ccaa99d1-918b-4138-9b79-72e37e578e3b">
