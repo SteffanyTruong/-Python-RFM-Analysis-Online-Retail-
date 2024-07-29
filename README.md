@@ -93,7 +93,7 @@
 `Stats = Stats.round({"Count_Share": 2})`  
 `Stats`
 
-**Calculate average recency ( days ) by segment customer** 
+**Calculate average recency ( days ) by segment customer**  
 `rfmStats = rfm_segment.groupby("Segment")['Recency'].mean().reset_index()`   
 `rfmStats = rfmStats.rename(columns = {'Recency':'Recency_mean'})` *# Rename the column after converting to DataFrame*  
 `rfmStats = rfmStats.round({'Recency_mean':0})`  
