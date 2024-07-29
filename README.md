@@ -35,16 +35,3 @@ Once each of the attributes has appropriate categories defined, segments are cre
 2.The 2 big groups are champions (19.2% ) and hibernating customer (16% ), following by lost customer ( 11.2% ),loyal ( 9.93% ), at risk (9.7% ) and potential loyal ( 9.52% ). These groups are really need attentions. 
 # IV. Recommendations
 
-|Segment | Charateristics| Recommendation |
-| :—– | :———- | :————– |
-| Champions |	Bought most recently and most often, and spend the most| Reward them. They can be early adopters to new products. Suggest them "Refer a friend". No need price incentives|
-| Loyal	| Buy most frequently and recently | Offer new product, early bird advantage to encourage them buy more often, cricticaly send the email of new produtcs |
-| Potential Loyalist |	Bought recently and frequently, not spend much	| Offer them bigger set value to increase the amount they spend |
-| New Customers	|Bought most recent |	Introduce loyal program |
-| Promising |	Bought recenltly, big spenders, not buying frequently |	Agressively market the most expensive products, no need price incentives |
-| Need Attention |	Buy recently and frequently, spend pretty big amount | Market the most expensive products |
-| About To Sleep |	Haven't purchased lately, not spend much	|
-| At Risk	Haven’t purchased for some time, but purchased frequently and spend the most|	Aggressive price incentives|
-| Cannot Lose Them	| Haven’t purchased for some time, but purchased frequently and spend the most |	Aggressive price incentives |
-|Hibernating customers	|They score 1-2 for recency, frequency, and monetary value. They made a purchase or two a long time ago and never returned.|	Don’t spend too much trying to re-acquire|
-|Lost customers	|Last purchased long ago, purchased few, and spent little	|Don’t spend too much trying to re-acquire|
