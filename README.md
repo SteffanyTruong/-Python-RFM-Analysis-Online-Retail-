@@ -21,11 +21,7 @@ Once each of the attributes has appropriate categories defined, segments are cre
 <img width="752" alt="Screenshot 2024-06-14 at 15 11 01" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/1b644d2c-0860-4521-a6c1-7f4d92cc3ede">
 
 ## Number of customer by number of orders   
-*# Seaborn Countplot of Frequency*  
-`sns.countplot(x=rfm_segment['Frequency'])`  
-`plt.title('Number of customer by number of order')`  
-`plt.ylabel('Number of customer')`  
-`plt.show()`
+
 ## Treemap of customer segmentation
 <img width="1234" alt="Screenshot 2024-06-14 at 16 09 18" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/ccaa99d1-918b-4138-9b79-72e37e578e3b">
 
