@@ -17,7 +17,8 @@ Once each of the attributes has appropriate categories defined, segments are cre
 
 <img width="1060" alt="Screenshot 2024-06-14 at 16 06 56" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/91450c50-f040-4e35-adda-87df92c090b4">
 ## Number of Customer in each segment  
-<img width="410" alt="Screenshot 2024-07-29 at 15 19 18" src="https://github.com/user-attachments/assets/a365acb6-d95a-41a7-b36e-9ad4217b3885">
+<img width="410" alt="Screenshot 2024-07-29 at 15 19 18" src="https://github.com/user-attachments/assets/a365acb6-d95a-41a7-b36e-9ad4217b3885">  
+
 ## Average days since last orders by customer segment  
 <img width="752" alt="Screenshot 2024-06-14 at 15 11 01" src="https://github.com/SteffanyTruong/-Python-RFM-Analysis-Online-Retail-/assets/171953683/1b644d2c-0860-4521-a6c1-7f4d92cc3ede">
 
