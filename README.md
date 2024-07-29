@@ -34,4 +34,5 @@ Once each of the attributes has appropriate categories defined, segments are cre
 
 2.The 2 big groups are champions (19.2% ) and hibernating customer (16% ), following by lost customer ( 11.2% ),loyal ( 9.93% ), at risk (9.7% ) and potential loyal ( 9.52% ). These groups are really need attentions. 
 # IV. Recommendations
+<img width="1104" alt="Screenshot 2024-07-29 at 14 32 39" src="https://github.com/user-attachments/assets/e6c5f8d2-c76f-47ff-94f0-4b070aa451af">
 
